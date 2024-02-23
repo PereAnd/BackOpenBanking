@@ -9,9 +9,6 @@ export class OrdenCompraEntity {
   costoTotal: number;
 
   @Column()
-  estado: string;
-
-  @Column()
   codigoEstado: number;
 
   @Column()
@@ -22,4 +19,14 @@ export class OrdenCompraEntity {
 
   @Column()
   observaciones: string;
+
+  // Relaciones
+  @Column()
+  cliente: string;
+
+  @Column()
+  Ecommerce: string;
+
+  @Column()
+  estado: string;
 }
